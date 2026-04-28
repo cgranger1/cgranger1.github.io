@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="Final_Style.css">
+</head>
+<body>
+  <h1>Task Manager</h1>
+  <form id="myForm">
+    <div class="formRow">
+        <div class="formGroup">
+            <input type="text" id="inputField" name="inputField" minlength="1" required>
+        </div>
+        <div class="formGroup">
+            <div type="container">
+                <select name="contextMenu" id="contextMenu" required>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+        </div>
+        <div class="formGroup2">
+            <label for="important">
+            <input type="checkbox" id="checkbox" name="important" value="yes">
+            Important
+            </label>
+        </div>
+    </div>
+        
+    <button type="submit">Add Task</button>
+  </form>
+  <br>
+
+  <div id="taskmanager" type="taskmanager"></div>
+
+  <script src="Final_Script.js" defer></script>
+</body>
+</html>
